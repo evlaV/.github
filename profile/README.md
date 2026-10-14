@@ -4,4 +4,6 @@
 
 This successor features a completely rebuilt [integration tool](https://github.com/evlav/evlav) that automatically rebuilds the SteamOS Holo and Jupiter repositories and syncs individual branches (e.g., `3.5`, `3.6`) with branch point calculation. So, when going to those branches, you can see where they split from the `main` SteamOS branch. The dates are also correct, so you can see when each update happened.
 
+It also supports the new Steam Frame ARM [sources](https://holo-packages.steamos.cloud/archlinux-deckard-hotfixes/source/), codenamed Deckard found [here](http://github.com/evlav/deckard). For now, branch point calculation is not supported for ARM sources as they are partial.
+
 To be respectful to the environment, it runs in seconds when there are no new updates and only downloads index files (a few kb). It is also bandwidth sparing (packages are only downloaded once). This allows it to run four times per day without affecting the upstream mirror.
